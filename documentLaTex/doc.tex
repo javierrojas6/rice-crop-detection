@@ -1,0 +1,81 @@
+
+To produce a simple LaTeX document, use an editor on turing (probably emacs), and make a file that looks like this:
+
+
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
+\begin{document}
+
+\section*{Notes for My Paper}
+
+Don't forget to include examples of topicalization.
+They look like this:
+
+{\small
+\enumsentence{Topicalization from sentential subject:\\ 
+\shortex{7}{a John$_i$ [a & kltukl & [el & 
+  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
+{ & {\bf R-}clear & {\sc comp} & 
+  {\bf IR}.{\sc 3s}-love   & P & him & }
+{John, (it's) clear that Mary loves (him).}}
+}
+
+\subsection*{How to handle topicalization}
+
+I'll just assume a tree structure like (\ex{1}).
+
+{\small
+\enumsentence{Structure of A$'$ Projections:\\ [2ex]
+\begin{tabular}[t]{cccc}
+    & \node{i}{CP}\\ [2ex]
+    \node{ii}{Spec} &   &\node{iii}{C$'$}\\ [2ex]
+        &\node{iv}{C} & & \node{v}{SAgrP}
+\end{tabular}
+\nodeconnect{i}{ii}
+\nodeconnect{i}{iii}
+\nodeconnect{iii}{iv}
+\nodeconnect{iii}{v}
+}
+}
+
+\subsection*{Mood}
+
+Mood changes when there is a topic, as well as when
+there is WH-movement.  \emph{Irrealis} is the mood when
+there is a non-subject topic or WH-phrase in Comp.
+\emph{Realis} is the mood when there is a subject topic
+or WH-phrase.
+
+\end{document}
+After typing in the commands to LaTeX (which are the instructions preceded by the backslash character) and the text of a sample paper, save them in a file with a name ending in .tex, like paper.tex. You can then type latex paper.tex and the typesetting program will run on your file of commands, producing a file ending in .dvi, which is the file that can be sent to a laserprinter (like valkyr, in Margaret Jacks Hall). (If there are any errors in your file of commands, you will be given a message which is usually impossible to interpret. Typical errors involve forgetting the right number of closing brackets or delimiters like & in example sentences. When LaTeX gives an error message and then asks what to do, possible options are to type x to quit and try to find the error in the emacs file, or press <RETURN> to try to continue and find the error by looking at the output document.) To print the file, you type lpr -Pvalkyr paper.dvi and see what you get. The easiest way to print a file of default sized pages two-up on a sheet sideways is with the command print -2 -Pprinter paper.dvi.
+You can't look at the .dvi file unless you have a workstation with graphics, rather than just a terminal. Any workstation that runs X-windows can be used to preview these files. You should get access to workstations (e.g. at Sweet Hall), otherwise you will waste a lot of paper and printer time while you learn how to typeset your papers.
+
+The output of the command file above should look like this:
+
+[This is the formatted text in gif format...]
+Here's a brief explanation of what some of the commands in the file above do:
+
+\documentclass[12pt]{article}
+This says to use 12pt type, which is a large readable size (10 and 11 are also used a lot). It also specifies that the article style be used, which is what you will use for linguistics papers.
+\usepackage{lingmacros}
+\usepackage{tree-dvips}
+lingmacros and tree-dvips are style files that have been written by people to help you do example sentences and draw trees. To see what lingmacros offers you, type help lingmacros on turing. For documentation describing the tree-dvips macros, just type latex tree-manual and then print tree-manual.dvi.
+\section*{Notes for My Paper}
+This says to make a section heading consisting of what is between the curly brackets, and the * says not to number it. Without the * you would get a numbered heading which would increment with each following section heading.
+\subsection*{How to handle topicalization}
+This says to make a subsection heading, which is smaller sized than the section heading. You can even do \subsubsection headings!
+\enumsentence, \ex and \shortex{7}
+These are control commands for numbering example sentences and giving examples with glosses and translation lines. You separate each word by & in the \shortex environment, and tell it the number of words you plan to enter (in curly brackets). \ex allows you to refer to numbered examples with a number relative to the current point in the file (rather than with an absolute number). These are described in lingmacros.
+\begin{tabular}[t]{cccc}
+This is how the tree was drawn. Consult the tree-dvips documentation for more details.
+\emph{Irrealis}
+This says to make what is in curly brackets into italics. You can also do \textbf{Hi There} to get bold Hi There and \textsc{Hi There} to get HI THERE.
+\small
+This makes the type size smaller. The braces delimit the range of text over which this command has an effect.
+\begin{document} and \end{document}
+These must be put around the text of your paper.
+There are a lot of useful macros (like lingmacros) available for doing linguistics things, like drawing feature structures and autosegmental associations. Generally you should ask someone who is doing something similar for help with the requirements of a particular topic. One style file you can include if you need phonetic symbols in your document is called tipa; to use it, just add tipa in with lingmacros and tree-dvips. For documentation, see /usr/local/lib/texmf/fonts/test/source/tipa/doc/tipaman.ps Note that you will have to use dvips before sending your file to the printer. Try gloss-test as a better way of producing aligned examples.
+
+One important thing to note about drawing trees with the tree-dvips package is that the lines are drawn by postscript commands, and so you can't see them unless you have a recent version of xdvi or make a postscript file and print that out, or preview a postscript document on a workstation with the program ghostview (look it up in the man pages). To make a postscript file, type dvips -o output.ps input.dvi where input.dvi is the .dvi file you created with LaTeX and the output file is the postscript file name. Then you can do lpr -Pvalkyr output.ps or ghostview output.ps on a workstation.
+

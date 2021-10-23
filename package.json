@@ -1,0 +1,27 @@
+{
+  "name": "rise-crop-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "latex:generate:pdf": "node generate-pdf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierrojas6/rice-crop-detection.git"
+  },
+  "keywords": [
+    "rise",
+    "ia"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javierrojas6/rice-crop-detection/issues"
+  },
+  "homepage": "https://github.com/javierrojas6/rice-crop-detection#readme",
+  "dependencies": {
+    "latex": "^0.0.1",
+    "node-latex": "^3.0.0"
+  }
+}
