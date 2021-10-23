@@ -1,2 +1,10 @@
-# rice-crop-detection
-rise crop detection using RN
+# Rice Crop Image Segmentation UsingArtificial Intelligence Techniques
+## Edgar Steven Correa Pinz ́on1, H ́ector Javier RojasSilva1, Juan Esteban Sacristan Vargas1, Deimer De JesusBallesteros Padilla1, Ronald Fernando Rodriguez Barbosa1and Manuel Fernando P ́arraga Meneses
+### School of Engineering, Pontificia Universidad Javeriana, Cra. 7No. 40-62, Bogota, 110231, Bogota, Colombia.
+
+
+# 1. Motivaci ́on y Contextualizaci ́on del Problema.
+Nuestra problem ́atica aborda la segmentaci ́on de im ́agenes como herramientapara  caracterizar  cultivos  de  arroz.  Se  pretende  a  trav ́es  de  cuatro  t ́ecnicasbasadas  en  inteligencia  artificial  resolver  el  problema  de  caracterizaci ́on  decultivos  de  arroz,  realizando  una  comparaci ́on  detallada  entre  las  t ́ecnicas,mediante la evaluaci ́on de desempe ̃no de cada una de ellas. Los trabajos rela-cionados  con  la  problem ́atica  planteada  son  numerosos.  Por  ejemplo  en  [1]plantean  el  desarrollo  de  dos  redes  neuronales  recurrentes  para  mapear  cul-tivos de arroz en series temporales Sentinel-1. Realizando comparaciones conlas  tecnicas  tradicionales  de  machine  learning.  En  [2]  se  realiza  un  trabajode segmentaci ́on de cultivos. A traves de la caracterizaci ́on de  ́ındices vegeta-tivo con im ́agenes multiespectrales en un Vehiculo Aereo no tripulado (UAV).A traves de un modelo de mezcla Gaussiana y un K-means basado en Mon-tecarlo  implementan  un  metodo  de  segmentaci ́on  para  la  resoluci ́on  de  unoproblematica con denotadas similitudes a la problematica que planteamos
+
+# 2. Descripción 
+El problema de segmentaci ́on de imagenes orientado hacia la caracterizaci ́onde  imagenes  de  cultivos  de  arroz  ser ́a  abordado  a  traves  de  cuatro  tecni-cas fundamentales en el  ́area de investigación de la inteligencia artificial. Seimplementaran  cuatro  desarrollos  que  se  orientar ́an  en  las  tematicas,  Redes Neuronales, optimizaci ́on genetica, logica difusa y aprendizaje de maquina. Encada una de ellas evaluaremos las ventajas y desventajas para concluir con unanalisis detallado para cada aproximación
