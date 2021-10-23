@@ -3,8 +3,29 @@
 ### School of Engineering, Pontificia Universidad Javeriana, Cra. 7No. 40-62, Bogota, 110231, Bogota, Colombia.
 
 
-# 1. Motivaci ́on y Contextualizaci ́on del Problema.
-Nuestra problem ́atica aborda la segmentaci ́on de im ́agenes como herramientapara  caracterizar  cultivos  de  arroz.  Se  pretende  a  trav ́es  de  cuatro  t ́ecnicasbasadas  en  inteligencia  artificial  resolver  el  problema  de  caracterizaci ́on  decultivos  de  arroz,  realizando  una  comparaci ́on  detallada  entre  las  t ́ecnicas,mediante la evaluaci ́on de desempe ̃no de cada una de ellas. Los trabajos rela-cionados  con  la  problem ́atica  planteada  son  numerosos.  Por  ejemplo  en  [1]plantean  el  desarrollo  de  dos  redes  neuronales  recurrentes  para  mapear  cul-tivos de arroz en series temporales Sentinel-1. Realizando comparaciones conlas  tecnicas  tradicionales  de  machine  learning.  En  [2]  se  realiza  un  trabajode segmentaci ́on de cultivos. A traves de la caracterizaci ́on de  ́ındices vegeta-tivo con im ́agenes multiespectrales en un Vehiculo Aereo no tripulado (UAV).A traves de un modelo de mezcla Gaussiana y un K-means basado en Mon-tecarlo  implementan  un  metodo  de  segmentaci ́on  para  la  resoluci ́on  de  unoproblematica con denotadas similitudes a la problematica que planteamos
+# Abstract
+Capturar   informaci ́on   de   cultivo   mediante   im ́agenes   se   ha   con-vertido   en   una   manera   no   invasiva   de   modelar   el   rendimientode   las   parcelas.   Esto   hace   posible   aplicar   t ́ecnicas   de   inteligen-cia   artificial   para   caracterizar   la   informacion   capturada   princi-palmente   por   vehiculos   a ́ereos   no   tripulados   y   por   estructurassatelitales.  Este  articulo  aborda  la  segmentaci ́on  de  im ́agenes  comoherramienta  para  caracterizar  cultivos  de  arroz.  Se  presentan  cua-tro  t ́ecnicas  basadas  en  AI,  con  un  enfoque  fuzzy-neuro-gen ́etico.  Seeval ́ua  el  desempe ̃no  de  cada  uno  mediante  m ́etricas  de  desempe ̃nolos resultados son contrastados con otras t ́enicas validadas en el estadodel  arte  -  informacion  munerica  de  posibles  mejoras  se  especifica  aquí
 
-# 2. Descripción 
-El problema de segmentaci ́on de imagenes orientado hacia la caracterizaci ́onde  imagenes  de  cultivos  de  arroz  ser ́a  abordado  a  traves  de  cuatro  tecni-cas fundamentales en el  ́area de investigación de la inteligencia artificial. Seimplementaran  cuatro  desarrollos  que  se  orientar ́an  en  las  tematicas,  Redes Neuronales, optimizaci ́on genetica, logica difusa y aprendizaje de maquina. Encada una de ellas evaluaremos las ventajas y desventajas para concluir con unanalisis detallado para cada aproximación
+**Keywords**:Rice Crop, Image Segmentation, Artificial Neural Networks,fuzzy logic
+
+# 1  Introduction
+
+## 1.1 Algoritmos Geneticos
+
+
+# 2 Métodos
+
+## 2.1  UAV and rice crop
+
+Los veh ́ıculos a ́ereos no tripulados (UAV) se han posicionado en el estado delarte como una herramienta para adquirir informaci ́on del cultivo. El potencial se debe a que integran c ́amaras con mejor resoluci ́on y mejores capacidades decomputo y almacenamiento. En este contexto, el insumo de esta investigaci ́onson las im ́agenes capturadas en campo. Las imagenes contiene informaci ́on delespectro visible e informaci ́on multiespectral del infrarrojo cercano y medio. Elconjunto de datos contiene 201.440 muestras, y es tomado de la investigaci ́on[8]. En la Fig. 1 se observa la forma en la que el UAV captura la imformacion delcultivo. La informacion se compone de cuatro canales a diferentes longitudesde honda, este conjunto conforma el conocimiento del cultivo.
+
+### Algoritmos Geneticos
+
+
+# Resultados y Análisis 
+
+# Conclusiones
+
+
+# Referencias
+
