@@ -1,12 +1,16 @@
 # Rice Crop Image Segmentation UsingArtificial Intelligence Techniques
-## Edgar Steven Correa Pinz ́on1, H ́ector Javier RojasSilva1, Juan Esteban Sacristan Vargas1, Deimer De JesusBallesteros Padilla1, Ronald Fernando Rodriguez Barbosa1and Manuel Fernando P ́arraga Meneses
+## Edgar Steven Correa Pinzón, Héctor Javier Rojas Silva, Juan Esteban Sacristan Vargas, Deimer De Jesus Ballesteros Padilla, Ronald Fernando Rodriguez Barbosa and Manuel Fernando Párraga Meneses
 ### School of Engineering, Pontificia Universidad Javeriana, Cra. 7No. 40-62, Bogota, 110231, Bogota, Colombia.
 
 
 # Abstract
-Capturar   informaci ́on   de   cultivo   mediante   im ́agenes   se   ha   con-vertido   en   una   manera   no   invasiva   de   modelar   el   rendimientode   las   parcelas.   Esto   hace   posible   aplicar   t ́ecnicas   de   inteligen-cia   artificial   para   caracterizar   la   informacion   capturada   princi-palmente   por   vehiculos   a ́ereos   no   tripulados   y   por   estructurassatelitales.  Este  articulo  aborda  la  segmentaci ́on  de  im ́agenes  comoherramienta  para  caracterizar  cultivos  de  arroz.  Se  presentan  cua-tro  t ́ecnicas  basadas  en  AI,  con  un  enfoque  fuzzy-neuro-gen ́etico.  Seeval ́ua  el  desempe ̃no  de  cada  uno  mediante  m ́etricas  de  desempe ̃nolos resultados son contrastados con otras t ́enicas validadas en el estadodel  arte  -  informacion  munerica  de  posibles  mejoras  se  especifica  aquí
+Diferentes técnicas de inteligencia artificial son utilizadas actualmente en la solución de problemas complejos que se presentan en múltiples áreas del conocimiento.  
+Existen métodos clásicos y otros nuevos con el enfoque fuzzy-neuro-genético, los cuales se han desarrollado con gran velocidad en las últimas décadas debido a sus buenos resultados, flexibilidad y adaptabilidad. 
+Capturar información de cultivo mediante imágenes se ha convertido en una manera no invasiva de modelar el rendimiento de las parcelas.   
+Esto hace posible aplicar técnicas de inteligencia artificial para caracterizar la informacion capturada principalmente por vehiculos aéreos no tripulados y por estructuras satelitales.  
+Este articulo aborda la segmentación de imágenes como herramienta para caracterizar cultivos de arroz. Se presenta un enfoque orientado a los algoritmos genéticos, en particular sontratados los enfoques de Michigan y Pittsburg. Se evalúa el desempeño de cada uno mediante métricas de desempeño **los resultados son contrastados con otras ténicas validadas en el estado del arte - informacion munerica de posibles mejoras se especifica aquí, falta modificar el resumen**  
 
-**Keywords**:Rice Crop, Image Segmentation, Artificial Neural Networks,fuzzy logic
+**Keywords**:Rice Crop, Image Segmentation, Artificial Neural Networks,fuzzy logic, genetic algorithms.  
 
 # 1  Introduction
 
