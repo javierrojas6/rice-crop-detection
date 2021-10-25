@@ -32,7 +32,11 @@ Los veh ́ıculos a ́ereos no tripulados (UAV) se han posicionado en el estado 
 
 ## 2.2 Algoritmos Geneticos
 
-Los Algorítmos genéticos son mecanismos de búsqueda de propósito generalque utilizan principios inspirados en las poblaciones genéticas naturales para evolucionar las soluciones a los problemas [9, 10]. En los algorítmos genéticos la idea básica es mantener una población de cromosomas, que representan soluciones candidatas al problema concreto que evolucionan con el tiempo a través de un proceso de competencia y variación controlada. El algoritmo comienza con una población de cromosomas generados aleatoriamente, y avanza hacia
+Los Algorítmos genéticos son mecanismos de búsqueda de propósito generalque utilizan principios inspirados en las poblaciones genéticas naturales para evolucionar las soluciones a los problemas [9, 10]. En los algorítmos genéticos la idea básica es mantener una población de cromosomas, que representan soluciones candidatas al problema concreto que evolucionan con el tiempo a través de un proceso de competencia y variación controlada. El algoritmo comienza con una población de cromosomas generados aleatoriamente, y avanza hacia  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig1.png)  
+
+mejores cromosomas aplicando operadores genéticos modelados en los procesos genéticos que ocurren en la naturaleza. La población sufre una evolución en  forma  de  selección  natural.  Sobre  la  base  de  las  evaluaciones,  se  formauna nueva población de cromosomas, utilizando un mecanismo de selección y operadores genéticos específicos como el cruce y la mutación [11]. Para cadaproblema que hay que resolver, hay que dise ̃nar una función de evaluación ofitness (f). Dado un cromosoma concreto, una posible solución, la función deaptitud devuelve una  ́unica aptitud numérica, que se supone proporcional a la utilidad o adaptación de la solución representada por ese cromosoma[9].
 
 # Resultados y Análisis 
 
