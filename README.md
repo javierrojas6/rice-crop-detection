@@ -38,10 +38,75 @@ Los Algorítmos genéticos son mecanismos de búsqueda de propósito generalque 
 
 mejores cromosomas aplicando operadores genéticos modelados en los procesos genéticos que ocurren en la naturaleza. La población sufre una evolución en  forma  de  selección  natural.  Sobre  la  base  de  las  evaluaciones,  se  formauna nueva población de cromosomas, utilizando un mecanismo de selección y operadores genéticos específicos como el cruce y la mutación [11]. Para cadaproblema que hay que resolver, hay que dise ̃nar una función de evaluación ofitness (f). Dado un cromosoma concreto, una posible solución, la función deaptitud devuelve una  ́unica aptitud numérica, que se supone proporcional a la utilidad o adaptación de la solución representada por ese cromosoma[9].
 
-# Resultados y Análisis 
+## 2.3 Sistemas clasificadores de aprendizaje  
 
-# Conclusiones
+Todos los sistemas clasificadores de aprendizaje (SCL) tienen en com ́un queson sistemas basados en reglas capaces de construir autom ́aticamente el con-junto de reglas que manipulan. Inventados en 1975 por John Holland [12], estossistemas  son,  paradójicamente,  menos  famosos  que  los  algoritmos  genéticos(AG),  a  pesar  de  que  los  AG  eran  originalmente  una  subparte  de  los  LCS. Sin  embargo,  durante  los   ́ultimos  años  la  investigacón  sobre  las  ECV  ha adquirido mayor visibilidad, lo que ha dado lugar a la oportunidad de publicar una presentación general para una amplia audiencia científica [13].En la *figura 2* se puede apreciar la jerarquía de campos que fundamentan el concepto de aprendizaje de sistemas de clasificación.Un LCS está compuesto por una población de clasificadores. Cada clasificador es un triple c, a, p que contiene una parte [Condición], una parte [Acción]y una estimación de la recompensa acumulada esperada que el agente puede obtener si dispara este clasificador. Formalmente, la parte [Condición] de los clasificadores es una lista de pruebas. Hay tantas pruebas como atributos en la descripción del problema, y cada prueba se aplica a un atributo específico. En el caso más común en el que la prueba especifica un valor que debe tomar un atributo para que la [Condición] coincida, la prueba está representada sólo  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig2.png)  
+
+por este valor. Existe una prueba particular llamada ”no importa”, que significa que la [Condición] del clasificador coincidirá con cualquiera que sea elvalor del atributo correspondiente. A un nivel más global, la parte [Condición] de un clasificador coincide si todas sus pruebas se mantienen en la situación actual [13].  
+
+## 2.4  Clasificadores de Michichigan y Pittsburgh
+
+Los  sistemas  clasificadores  son  sistemas  basados  en  reglas  que  combinan  elaprendizaje  por  diferencias  temporales  o  el  aprendizaje  supervisado  con  unalgoritmo gen ́etico para resolver problemas de clasificaci ́on y aprendizaje porrefuerzo. Hay dos tipos de sistemas clasificadores: Los sistemas clasificadoresde Michigan, que est ́an dise ̃nados para el aprendizaje en línea, pero también pueden abordar problemas fuera de lınea; y los sistemas clasificadores de Pitts-burgh, que s ́olo pueden aplicarse al aprendizaje fuera de línea. En los sistemas clasificadores de Michigan [14, 15], el aprendizaje se ve como un proceso deadaptación  en  línea  a  un  entorno  desconocido  que  representa  el  problema y proporciona retroalimentación en términos de una recompensa numérica. Los sistemas clasificadores de Michigan mantienen una   ́unica solución candidata que consiste en un conjunto de reglas, o una población de clasificadores. Los sistemas de Michigan aplican el aprendizaje por diferencia temporal para distribuir  la  recompensa  entrante  entre  los  clasificadores  que  son  responsablesde ella; y un algoritmo genético para seleccionar, recombinar y mutar clasificadores individuales con el fin de mejorar su contribución a la solución actual. En cambio, en los sistemas clasificadores de Pittsburgh [15, 16], el aprendizajese ve como un proceso de optimización fuera de línea en el que se aplica un algoritmo  genético  solo  para  buscar  la  mejor  solución  a  un  problema  dado. Además, los sistemas clasificadores de Pittsburgh no mantienen una, sino un conjunto de soluciones candidatas. Mientras que en el sistema de clasificadores de Michigan cada clasificador individual representa una parte de la solución global, en el sistema de Pittsburgh cada individuo es una soluci ́on candidatacompleta (formada a su vez por un conjunto de clasificadores). La aptitud decada individuo de Pittsburgh se calcula fuera de l ́ınea prob ́andolo en una muestra representativa de instancias del problema. Los individuos compiten entres ́ı a trav ́es de la selecci ́on, mientras que el cruce y la mutación recombinan lassoluciones para buscar soluciones mejores [15].  
+
+## 2.5 Clasificadores de Pittsburgh  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig3.png)  
+
+# 3. Resultados y análisis  
+
+El  conjunto  de  datos  contiene  información  multiespectal  compuesta  por  4canales, Red, Green, NIR y Red Edge. Cada pixel es etiquetado manualmente para indicar si corresponde a un pixel de plantación de arroz o no. En la Fig. 3-c se observa el ground truth generado como referencia. Se genera un datasetde alrededor de 1.7 millones de registros etiquetados. De los cuales, 201.440son objeto de estudio de esta investigación.
+
+## 3.1 Análisis del dataset  
+
+En la Fig. 4 se observa que las im ́agenes presentan mayor tendencia a etiquetasen 1, relacionadas a plantación. Esto se hace evidente en la Fig. 3-a, debido a que el dron en campo tiende a observar mas regiones asociadas al materialbiologico del cultivo en relación al suelo.En la Fig. 4 se observa que los resultados están fuertemente influenciadospor los canales infrarrojos, medianamente influenciados por el canal verde y
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig4.png)  
+
+poco influenciados por el canal rojo. Esto concuerda con la Fig. 3-b, las plantasreflejan las longitudes de honda infrarrojas y las relacionadas al color verdeprincipalmente.  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig5.png)
+
+El  desarrollo  metodologico  parte  de  balancear  el  dataset,  el  resultado  seobserva en la Fig. 6.  
+En la Fig. 7 se observa que aunque se reduzca significativamente la cantidadde muestras, se respeta la integridad de los datos.  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig6.png)  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig7.png)  
+
+Estos  datos  son  usados  para  el  entrenamiento  de  la  red  neuronal,  enproporción de 70% para entrenamiento y 30% para validación.  
+
+## 3.2 Segmentación de imágenes con Algoritmos Geneticos  
+
+El conjunto de datos esta conformado por 201.440 muestras. Cada vector decaracteristicas esta representado por cuatro entradas y una salida. La salidapuede tomar dos valores, uno para planta y otro para suelo. En el experimentose  define  una  población  inicial  y  se  inicializan  los  cromosomas  de  los  posi-bles  individuos  o  soluciones.  Dichos  individuos  se  eval ́uan  mediante  función de  fitness,  en  la  que  se  implementan  un  conjunto  de  reglas  bajo  el  enfoqueMichigan  en  aras  de  priorizar  los  individuos  de  mejor  aptitud  en  el  procesode  selecci ́on  realizado  de  manera  aleatoria  mediante  ruleta.  A  continuaci ́on,realizamos  el  cruce,  seleccionando  tuplas  de  individuos  con  mejor  aptitud  yelegimos aleatoriamente de 1 a 8 genes para intercambiarlos. Por   ́ultimo, serealiza el proceso de mutaci ́on, eligiendo aleatoriamente 12% de los individuosy variando sus cromosomas aleatoriamente. Los resultados se presentan medi-ante  tres  par ́ametros,  (i)  métrica  verdaderos  positivos  como  funci ́on  fitness,(ii) métrica verdaderos negativos como funci ́on fitness y (iii) métrica fitness.En la figura. 8 se muestra la métrica de los verdaderos positivos como función fitness. En la figura. 9 se muestra la métrica de los verdaderos negativos comofunción fitness. En la figura. 10 se muestra la métrica fitness.  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig8.png)  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig9.png)  
+
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/Fig10.png)  
+
+
+# 4. Conclusiones
+Este enfoque de algoritmos geneticosla pregunta que se busca responder (en el transcurso de esta investigación)es si ¿es suficiente 0.90 con los canales RED y NIR  ́o 0.92 con los canales RED,GREEN, RED-EDGE y NIR para resolver el problema de segmentacion de unamanera adecuada? - en relaci ́on con las t ́ecnicas de segmentaci ́on presentadasen el estado del arte
 
 
 # Referencias
+
+[1]De, S., Bhattacharyya, S., Chakraborty, S., Dutta, P.: Hybrid Soft Com-puting  for  Multilevel  Image  and  Data  Segmentation.  Springer,  WestBengal (2016)  
+[2]  Carson, C., Belongie, S., Greenspan, H., Malik, J.: Blobworld: Image seg-mentation using expectation-maximization and its application to imagequerying. IEEE Transactions on pattern analysis and machine intelligence24(8), 1026–1038 (2002)  
+[3]  Banham, M.R., Katsaggelos, A.K.: Digital image restoration. IEEE signalprocessing magazine14(2), 24–41 (1997)  
+[4]  Tyagi,  V.:  Understanding  Digital  Image  Processing.  CRC  Press,  Guna(MP), India (2018)  
+[5]  Wen, X.-B., Zhang, H., Jiang, Z.-T.: Multiscale unsupervised segmenta-tion of sar imagery using the genetic algorithm. Sensors8(3), 1704–1711(2008)  
+[6]Senthilkumaran,  N.,  Rajesh,  R.:  Image  segmentation-a  survey  of  softcomputing  approaches.  In:  2009  International  Conference  on  Advancesin Recent Technologies in Communication and Computing, pp. 844–846(2009). IEEE  
+[7]  Karkavitsas,  G.,  Rangoussi,  M.:  Object  localization  in  medical  imagesusing genetic algorithms. International Journal of Signal Processing1(4)(2005)  
+[8]  JD., C., F., C., D., M., E., P., JP., R., ES, C.: A novel nir-image segmen-tation method for the precise estimation of above-ground biomass in ricecrops.  PLoS  ONE15(10): e0239591(2020).  https://doi.org/10.1371/journal.pone.0239591  
+[9]  Mehta,  S.B.,  Chaudhury,  S.,  Bhattacharyya,  A.,  Jena,  A.:  Tissue  clas-sification in magnetic resonance images through the hybrid approach ofmichigan and pittsburg genetic algorithm. Applied Soft Computing11(4),3476–3484 (2011)  
+[10]  Ishibuchi,  H.,  Nakashima,  T.,  Murata,  T.:  Three-objective  genetics-based machine learning for linguistic rule extraction. Information sciences136(1-4), 109–133 (2001)  
+[11]  Wang,  L.-X.,  Mendel,  J.M.:  Generating  fuzzy  rules  by  learning  fromexamples.  IEEE  Transactions  on  systems,  man,  and  cybernetics22(6),1414–1427 (1992)  
+[12]  Holland, J.: Adaptation in natural and artificial systems, univ. of mich.press. Ann Arbor (1975)  
+[13]  Sigaud,  O.,  Wilson,  S.W.:  Learning  classifier  systems:  a  survey.  SoftComputing11(11), 1065–1078 (2007)  
+[14]  Sampson,  J.R.:  Adaptation  in  natural  and  artificial  systems  (John  H.Holland). Society for Industrial and Applied Mathematics (1976)  
+[15]  Lanzi,  P.L.:  In:  Sammut,  C.,  Webb,  G.I.  (eds.)  Classifier  Systems,pp.  217–224.  Springer,  Boston,  MA  (2017).  https://doi.org/10.1007/978-1-4899-7687-1941.https://doi.org/10.1007/978-1-4899-7687-1941[16]  Smith, S.F.: A Learning System Based on Genetic Adaptive Algorithms.University of Pittsburgh, ??? (1980)
 
