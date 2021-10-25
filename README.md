@@ -28,10 +28,11 @@ Esta  sección  aborda  el  problema  de  segmentaci ́on  de  im ́agenes  a  t
 
 ## 2.1  UAV and rice crop
 
-Los veh ́ıculos a ́ereos no tripulados (UAV) se han posicionado en el estado delarte como una herramienta para adquirir informaci ́on del cultivo. El potencial se debe a que integran c ́amaras con mejor resoluci ́on y mejores capacidades decomputo y almacenamiento. En este contexto, el insumo de esta investigaci ́onson las im ́agenes capturadas en campo. Las imagenes contiene informaci ́on delespectro visible e informaci ́on multiespectral del infrarrojo cercano y medio. Elconjunto de datos contiene 201.440 muestras, y es tomado de la investigaci ́on[8]. En la Fig. 1 se observa la forma en la que el UAV captura la imformacion delcultivo. La informacion se compone de cuatro canales a diferentes longitudesde honda, este conjunto conforma el conocimiento del cultivo.
+Los veh ́ıculos a ́ereos no tripulados (UAV) se han posicionado en el estado delarte como una herramienta para adquirir información del cultivo. El potencial se debe a que integran cámaras con mejor resolución y mejores capacidades de computo y almacenamiento. En este contexto, el insumo de esta investigación son las imágenes capturadas en campo. Las imagenes contiene información del espectro visible e información multiespectral del infrarrojo cercano y medio. El conjunto de datos contiene 201.440 muestras, y es tomado de la investigación[8]. En la Fig. 1 se observa la forma en la que el UAV captura la imformacion delcultivo. La informacion se compone de cuatro canales a diferentes longitudesde honda, este conjunto conforma el conocimiento del cultivo.
 
-### Algoritmos Geneticos
+## 2.2 Algoritmos Geneticos
 
+Los Algorítmos genéticos son mecanismos de búsqueda de propósito generalque utilizan principios inspirados en las poblaciones genéticas naturales para evolucionar las soluciones a los problemas [9, 10]. En los algorítmos genéticos la idea básica es mantener una población de cromosomas, que representan soluciones candidatas al problema concreto que evolucionan con el tiempo a través de un proceso de competencia y variación controlada. El algoritmo comienza con una población de cromosomas generados aleatoriamente, y avanza hacia
 
 # Resultados y Análisis 
 
