@@ -87,7 +87,10 @@ El conjunto de datos esta conformado por 201.440 muestras. Cada vector de caract
 
 
 # 4. Conclusiones
-Este enfoque de algoritmos geneticos la pregunta que se busca responder (en el transcurso de esta investigación) es si ¿es suficiente 0.90 con los canales RED y NIR  ́o 0.92 con los canales RED,GREEN, RED-EDGE y NIR para resolver el problema de segmentacion de una manera adecuada? - en relaci ́on con las ténicas de segmentación presentadas en el estado del arte
+
+Este enfoque de algoritmos genéticos a través de clasificadores tipo Michigan es una alternativa viable al problema de segmentación de imágenes. A partir de la definición adecuada de una función fitness y objetivo. De la que seleccionamos de los individuos de mejor aptitud de forma aleatoria a través de ruleta, aquellos con los que se realiza el cruce y posteriormente se mutan 12\% de los individuos aleatoriamente. El resultado denota convergencia de los individuos hacia un posible clasificador de los pixeles denotados por suelos o cultivos de arroz.  
+***la pregunta que se busca responder (en el transcurso de esta investigación) es si ¿es suficiente 0.90 con los canales RED y NIR ó 0.92 con los canales RED, GREEN, RED-EDGE y NIR para resolver el problema de segmentacion de una manera adecuada? - en relación con las técnicas de segmentación presentadas en el estado del arte ***
+
 
 
 # Referencias
