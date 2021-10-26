@@ -34,7 +34,7 @@ Los vehículos a ́ereos no tripulados (UAV) se han posicionado en el estado del
 
 Los Algorítmos genéticos son mecanismos de búsqueda de propósito general que utilizan principios inspirados en las poblaciones genéticas naturales para evolucionar las soluciones a los problemas [9, 10]. En los algorítmos genéticos la idea básica es mantener una población de cromosomas, que representan soluciones candidatas al problema concreto que evolucionan con el tiempo a través de un proceso de competencia y variación controlada. El algoritmo comienza con una población de cromosomas generados aleatoriamente, y avanza hacia  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig1.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig1.png)  
 
 mejores cromosomas aplicando operadores genéticos modelados en los procesos genéticos que ocurren en la naturaleza. La población sufre una evolución en  forma  de  selección  natural.  Sobre  la  base  de  las  evaluaciones,  se  forma una nueva población de cromosomas, utilizando un mecanismo de selección y operadores genéticos específicos como el cruce y la mutación [11]. Para cada problema que hay que resolver, hay que diseñar una función de evaluación ofitness (f). Dado un cromosoma concreto, una posible solución, la función de aptitud devuelve una  ́unica aptitud numérica, que se supone proporcional a la utilidad o adaptación de la solución representada por ese cromosoma[9].
 
@@ -42,7 +42,7 @@ mejores cromosomas aplicando operadores genéticos modelados en los procesos gen
 
 Todos los sistemas clasificadores de aprendizaje (SCL) tienen en común que son sistemas basados en reglas capaces de construir automáticamente el conjunto de reglas que manipulan. Inventados en 1975 por John Holland [12], estos sistemas  son,  paradójicamente,  menos  famosos  que  los  algoritmos  genéticos(AG),  a  pesar  de  que  los  AG  eran  originalmente  una  subparte  de  los  LCS. Sin  embargo,  durante  los   ́ultimos  años  la  investigacón  sobre  las  ECV  ha adquirido mayor visibilidad, lo que ha dado lugar a la oportunidad de publicar una presentación general para una amplia audiencia científica [13]. En la *figura 2* se puede apreciar la jerarquía de campos que fundamentan el concepto de aprendizaje de sistemas de clasificación. Un LCS está compuesto por una población de clasificadores. Cada clasificador es un triple c, a, p que contiene una parte [Condición], una parte [Acción] y una estimación de la recompensa acumulada esperada que el agente puede obtener si dispara este clasificador. Formalmente, la parte [Condición] de los clasificadores es una lista de pruebas. Hay tantas pruebas como atributos en la descripción del problema, y cada prueba se aplica a un atributo específico. En el caso más común en el que la prueba especifica un valor que debe tomar un atributo para que la [Condición] coincida, la prueba está representada sólo  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig2.png)  
+![Image text](https://https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig2.png)  
 
 por este valor. Existe una prueba particular llamada ”no importa”, que significa que la [Condición] del clasificador coincidirá con cualquiera que sea elvalor del atributo correspondiente. A un nivel más global, la parte [Condición] de un clasificador coincide si todas sus pruebas se mantienen en la situación actual [13].  
 
@@ -55,23 +55,23 @@ Los  sistemas  clasificadores  son  sistemas  basados  en  reglas  que  combinan
 
 El  conjunto  de  datos  contiene  información  multiespectal  compuesta  por  4 canales, Red, Green, NIR y Red Edge. Cada pixel es etiquetado manualmente para indicar si corresponde a un pixel de plantación de arroz o no. En la Fig. 3-c se observa el ground truth generado como referencia. Se genera un datasetde alrededor de 1.7 millones de registros etiquetados. De los cuales, 201.440 son objeto de estudio de esta investigación.  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig3.png) 
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig3.png) 
 
 ## 3.1 Análisis del dataset  
 
 En la Fig. 4 se observa que las imágenes presentan mayor tendencia a etiquetas en 1, relacionadas a plantación. Esto se hace evidente en la Fig. 3-a, debido a que el dron en campo tiende a observar mas regiones asociadas al material biologico del cultivo en relación al suelo. En la Fig. 4 se observa que los resultados están fuertemente influenciados por los canales infrarrojos, medianamente influenciados por el canal verde y poco influenciados por el canal rojo. Esto concuerda con la Fig. 3-b, las plantas reflejan las longitudes de onda infrarrojas y las relacionadas al color verde principalmente.  
 
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig4.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig4.png)  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig5.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig5.png)  
 
 El  desarrollo  metodologico  parte  de  balancear  el  dataset,  el  resultado  seobserva en la Fig. 6.  
 En la Fig. 7 se observa que aunque se reduzca significativamente la cantidadde muestras, se respeta la integridad de los datos.  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig6.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig6.png)  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig7.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig7.png)  
 
 Estos  datos  son  usados  para  el  entrenamiento  de  la  red  neuronal,  en proporción de 70% para entrenamiento y 30% para validación.  
 
@@ -79,11 +79,11 @@ Estos  datos  son  usados  para  el  entrenamiento  de  la  red  neuronal,  en p
 
 El conjunto de datos esta conformado por 201.440 muestras. Cada vector de caracteristicas esta representado por cuatro entradas y una salida. La salida puede tomar dos valores, uno para planta y otro para suelo. En el experimentose  define  una  población  inicial  y  se  inicializan  los  cromosomas  de  los  posibles  individuos  o  soluciones.  Dichos  individuos  se  evalúan  mediante  función de  fitness,  en  la  que  se  implementan  un  conjunto  de  reglas  bajo  el  enfoque Michigan  en  aras  de  priorizar  los  individuos  de  mejor  aptitud  en  el  proceso de  selección  realizado  de  manera  aleatoria  mediante  ruleta.  A  continuación, realizamos  el  cruce,  seleccionando  tuplas  de  individuos  con  mejor  aptitud  y elegimos aleatoriamente de 1 a 8 genes para intercambiarlos. Por   ́ultimo, se realiza el proceso de mutación, eligiendo aleatoriamente 12% de los individuos y variando sus cromosomas aleatoriamente. Los resultados se presentan mediante  tres  parámetros,  (i)  métrica  verdaderos  positivos  como  función  fitness,(ii) métrica verdaderos negativos como función fitness y (iii) métrica fitness.En la figura. 8 se muestra la métrica de los verdaderos positivos como función fitness. En la figura. 9 se muestra la métrica de los verdaderos negativos comofunción fitness. En la figura. 10 se muestra la métrica fitness.  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig8.png)  
+![Image text](https://https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig8.png)  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig9.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig9.png)  
 
-![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes%20documentacion/Fig10.png)  
+![Image text](https://github.com/javierrojas6/rice-crop-detection/blob/feature/documentacion/imagenes/Fig10.png)  
 
 
 # 4. Conclusiones
