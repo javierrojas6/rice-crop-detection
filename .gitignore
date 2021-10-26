@@ -36,3 +36,6 @@ build/
 ### Application ###
 src/main/resources/application.yml
 src/main/resources/log4j.properties
+
+node_modules/
+log*/
