@@ -8,24 +8,3 @@ Capturar   informaci ́on   de   cultivo   mediante   im ́agenes   se   ha   co
 
 **Keywords**:Rice Crop, Image Segmentation, Artificial Neural Networks,fuzzy logic
 
-# 1  Introduction
-
-## 1.1 Algoritmos Geneticos
-
-
-# 2 Métodos
-
-## 2.1  UAV and rice crop
-
-Los veh ́ıculos a ́ereos no tripulados (UAV) se han posicionado en el estado delarte como una herramienta para adquirir informaci ́on del cultivo. El potencial se debe a que integran c ́amaras con mejor resoluci ́on y mejores capacidades decomputo y almacenamiento. En este contexto, el insumo de esta investigaci ́onson las im ́agenes capturadas en campo. Las imagenes contiene informaci ́on delespectro visible e informaci ́on multiespectral del infrarrojo cercano y medio. Elconjunto de datos contiene 201.440 muestras, y es tomado de la investigaci ́on[8]. En la Fig. 1 se observa la forma en la que el UAV captura la imformacion delcultivo. La informacion se compone de cuatro canales a diferentes longitudesde honda, este conjunto conforma el conocimiento del cultivo.
-
-### Algoritmos Geneticos
-
-
-# Resultados y Análisis 
-
-# Conclusiones
-
-
-# Referencias
-
